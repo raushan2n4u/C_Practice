@@ -12,7 +12,7 @@ int main()
     for(i=0;i<n;i++)
     {
        scanf("%d",&A[i]);
-                    }
+     }
                     
     count=1;cand=A[0];
     for(i=1;i<n;i++)
@@ -23,23 +23,21 @@ int main()
         count--;
         
         if(!count) 
-        {cand=A[i];
-        count=1;
-        }
+           {cand=A[i];
+             count=1;
+            }
                    
-                
-                    
-                    }
-                   count=0;
-                   for(i=0;i<n;i++)
+     }
+       count=0;
+        for(i=0;i<n;i++)
                    {
                         if(A[i]==cand)
                         count++ ;          
-                                   }
+                     }
                     
                     
-        if (count>n/2)
-      {printf("%d",cand);} 
+      if (count>n/2)
+         {printf("%d",cand);} 
       else
       printf("%d",INT_MIN);             
     
